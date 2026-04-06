@@ -26,9 +26,9 @@ fn main() -> eframe::Result<()> {
             });
             
             let mut fonts = egui::FontDefinitions::default();
-            
-            fonts.font_data.insert("msyh".to_owned(),
-                egui::FontData::from_static(include_bytes!("../assets/fonts/msyh.ttc")));
+
+            fonts.font_data.insert("cn".to_owned(),
+                egui::FontData::from_static(include_bytes!("../assets/NotoSansSC.ttf")));
 
             fonts.font_data.insert("arial".to_owned(),
                 egui::FontData::from_static(include_bytes!("../assets/fonts/arial.ttf")));
@@ -49,9 +49,9 @@ fn main() -> eframe::Result<()> {
             }
             
             fonts.families.get_mut(&egui::FontFamily::Proportional).unwrap()
-                .splice(0..0, vec!["msyh".to_owned(), "arial".to_owned(), "malgun".to_owned(), "nirmala".to_owned(), "segoe".to_owned()]);
+                .splice(0..0, vec!["cn".to_owned(), "arial".to_owned(), "malgun".to_owned(), "nirmala".to_owned(), "segoe".to_owned()]);
             fonts.families.get_mut(&egui::FontFamily::Monospace).unwrap()
-                .splice(0..0, vec!["msyh".to_owned(), "arial".to_owned(), "malgun".to_owned(), "nirmala".to_owned(), "segoe".to_owned()]);
+                .splice(0..0, vec!["cn".to_owned(), "arial".to_owned(), "malgun".to_owned(), "nirmala".to_owned(), "segoe".to_owned()]);
             
             ctx.set_fonts(fonts);
             
