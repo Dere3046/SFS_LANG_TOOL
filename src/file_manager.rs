@@ -32,7 +32,7 @@ impl FileManager {
         self.game_dir = Some(dir.to_path_buf());
     }
 
-    pub const PLUGIN_VERSION: &str = "4.1.0";
+    pub const PLUGIN_VERSION: &str = "5.1.0";
 
     pub fn is_bepinex_installed(&self) -> bool {
         if let Some(dir) = &self.game_dir {
