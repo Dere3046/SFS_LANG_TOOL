@@ -1,5 +1,9 @@
 # SFS Language Tool
 
+> **提醒**：该项目应迁移到 [SFS_HAN 仓库][new-repo]。
+>
+> [new-repo]: https://github.com/Dere3046/SFS_HAN
+
 Rust (egui) 桌面工具，管理 SFS 自定义翻译文件、BepInEx 与字体修复 MOD。
 
 ## 声明
